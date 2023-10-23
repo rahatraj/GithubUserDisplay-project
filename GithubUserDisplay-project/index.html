@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective Project | search github profile</title>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600&family=Merriweather:wght@300;400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- conatiner of the html page -->
+    <div class="container">
+        <!-- heading  -->
+        <header class="header">
+            <h1 class="title">DevDetective</h1>
+            <div id="btn-mode">
+                <p id="mode-text"></p>
+                <div class="icon-container">
+                    <img src="./assets/images/sun-icon.svg" alt="sun icon" id="mode-icon">
+                </div>
+            </div>
+        </header>
+
+        <!-- main container -->
+        <main>
+            <!-- app content -->
+
+            <div id="app">
+
+                <!-- seerach bar of the app -->
+                <div class="search-bar-container">
+                    <input type="search" name="user-input" id="user-input" placeholder="Enter a Github username....."
+                        required>
+                    <!-- hidden para -->
+                    <div class="error">
+                        <p id="no-results" style="display: none;">no user found</p>
+                    </div>
+
+                    <!-- serach button -->
+                    <button id="submit" class="btn-search">Search</button>
+                </div>
+
+                <!-- main profile detials container -->
+                <div class="profile-container">
+
+                    <!-- content of the profile -->
+
+                    <div class="profile-content">
+
+                        <!-- header of the profile -->
+                        <div class="profile-header">
+                            <img id="avatar" src="" alt="">
+                            <div class="profile-info-wrapper">
+
+                                <div class="profile-name">
+                                    <h2 id="name"></h2>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" id="user"></a>
+                                </div>
+                                <p id="date"></p>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Bio of the profile -->
+                        <p id="bio"></p>
+
+                        <!-- profile status -->
+                        <div class="profile-status-wrapper">
+
+                            <!-- repository -->
+                            <div class="profile-stat">
+                                <p class="stat-title">Repos</p>
+                                <p id="repos" class="stat-value"></p>
+                            </div>
+                            <!--  followers -->
+                            <div class="profile-stat">
+                                <p class="stat-title">Followers</p>
+                                <p id="followers" class="stat-value"></p>
+                            </div>
+                            <!-- followings -->
+                            <div class="profile-stat">
+                                <p class="stat-title">Following</p>
+                                <p id="following" class="stat-value"></p>
+                            </div>
+                        </div>
+
+                        <!-- profile bottom wrapper  -->
+
+                        <div class="profile-bottom-wrapper">
+
+                            <!-- location -->
+                            <div class="profile-info">
+                                <div class="bottom-icons" style="opacity: 0.5;">
+                                    <img src="./assets/images/location-icon.svg" alt="">
+                                </div>
+                                <p id="location" style="opacity: 0.7;" class="dm-text"></p>
+                            </div>
+
+                            <!-- website pages -->
+                            <div class="profile-info">
+                                <div class="bottom-icons" style="opacity: 0.5;">
+                                    <img src="./assets/images/website-icon.svg" alt="">
+                                </div>
+                                <a href="#" id="page" style="opacity: 0.7;"></a>
+                            </div>
+
+                            <!-- twitter account -->
+                            <div class="profile-info">
+                                <div class="bottom-icons" style="opacity: 0.5;">
+                                    <img src="./assets/images/twitter-icon.svg" alt="">
+                                </div>
+                                <a href="#" id="twitter" style="opacity: 0.7;"></a>
+                            </div>
+
+                            <!-- company name -->
+                            <div class="profile-info">
+                                <div class="bottom-icons" style="opacity: 0.5;">
+                                    <img src="./assets/images/company-icon.svg" alt="">
+                                </div>
+                                <p id="company" style="opacity: 0.7;"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
